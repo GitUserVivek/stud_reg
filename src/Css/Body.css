@@ -43,3 +43,13 @@ button{
 button:hover{
     box-shadow: 0 0 10px #000;
 }
+.AdminButtom{
+    color: black;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgb(113, 68, 158);
+}
+.AdminAuth form input{
+    background: rgba(240, 240, 240, 0.7);
+    color: black;
+    font-weight: 600;
+}
