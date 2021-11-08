@@ -1,0 +1,45 @@
+.Body *{
+   color: #fff;
+   user-select: none;
+}
+
+.Body{
+    background: url("https://mrunkn.000webhostapp.com/PHP/Stud_Reg/registrationform.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+label{
+    color: black !important;
+    text-shadow: 0 0 10px white ;
+    font-weight: 500;
+}
+form{ 
+    display: grid;
+    grid-template-columns: auto auto ; 
+    width: fit-content;   
+    align-items: center;
+    margin-top: 3rem; 
+}
+input{
+    margin: 0.5rem;
+    margin-left: 1rem; 
+    background: rgba(0, 0, 0, 0.405);
+    border: transparent ;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    outline: none;
+}
+button{
+    background: rgba(85, 97, 165, 0.568);
+    border-radius: 0.5rem;
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 1rem;
+    border:transparent;
+}
+button:hover{
+    box-shadow: 0 0 10px #000;
+}
