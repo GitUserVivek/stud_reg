@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-// import { HashRouter as Router, NavLink, Route } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import axios from "axios";
 import '../Css/Body.css';
 import '../Css/AdminPanel.css';
@@ -17,7 +17,8 @@ export default function Adminpanel() {
         get();
     }, []);
     return <div className="AdminPanel">
-        <div className="Top">  <div className="heading">admin panel  </div>  <div className="search">search <input type="text" onChange={
+
+        <div className="Top">  <div className="heading">admin panel   <NavLink exact to="/AdminAuth" className="AdminButtom">LogOut </NavLink>  </div><div className="search">search <input type="text" onChange={
             (target) => {
                 setSearch(target.target.value)
             }
