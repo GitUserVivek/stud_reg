@@ -88,4 +88,7 @@ table{
         display: flex;
         justify-content: space-between;
        }
+       .AdminPanel{
+           font-size: 13px !important;
+       }
 }
