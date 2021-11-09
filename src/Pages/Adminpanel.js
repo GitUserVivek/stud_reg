@@ -32,27 +32,28 @@ export default function Adminpanel() {
                         Data.map((index) => {
                             return search ? index["NAME"].includes(search) ? <tr key={index["SR"]}>
                                 <td>{index["SR"]}</td><td>{index["NAME"]}</td><td>{index["DEPARTMENT"]}</td><td>{index["COURSE"]}</td> <td className="operation"><form action="https://mrunkn.000webhostapp.com/PHP/Stud_Reg/StoreData.php" method="POST">
-                                    <input name='action' value="DeleteData" type="hidden"></input>
-                                    <input name='index' value={index["SR"]} type="hidden"></input>
+                                    <input name='action' defaultValue="DeleteData" type="hidden"></input>
+                                    <input name='index' defaultValue={index["SR"]} type="hidden"></input>
                                     <input type="SUBMIT"></input>
 
                                 </form></td>
                             </tr> : null : <tr key={index["SR"]}>
                                 <td>{index["SR"]}</td><td>{index["NAME"]}</td><td>{index["DEPARTMENT"]}</td><td>{index["COURSE"]}</td>
                                 <td className="operation"><form action="https://mrunkn.000webhostapp.com/PHP/Stud_Reg/StoreData.php" method="POST">
-                                    <input name='action' value="DeleteData" type="hidden"></input>
-                                    <input name='index' value={index["SR"]} type="hidden"></input>
+                                    <input name='action' defaultValue="DeleteData" type="hidden"></input>
+                                    <input name='index' defaultValue={index["SR"]} type="hidden"></input>
                                     <input type="SUBMIT"></input>
 
                                 </form></td>
                             </tr>
                         })
                     }
-                    <td className="operation"><form action="https://mrunkn.000webhostapp.com/PHP/Stud_Reg/StoreData.php" method="POST">
-                        <input name='action' value="TrunketTable" type="hidden"></input>
-                        <input type="SUBMIT" value="TRUNCATE" ></input>
+                    <tr><td className="operation"><form action="https://mrunkn.000webhostapp.com/PHP/Stud_Reg/StoreData.php" method="POST">
+                        <input name='action' defaultValue="TrunketTable" type="hidden"></input>
+                        <input type="SUBMIT" defaultValue="TRUNCATE" ></input>
 
                     </form></td>
+                    </tr>
                 </tbody>
             </table>
         </div>

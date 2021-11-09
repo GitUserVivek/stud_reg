@@ -33,6 +33,9 @@ td{
     /* border-radius: 0.5rem; */
     background: rgba(0, 0, 0, 0.624); 
     text-align: center;
+    width: fit-content;
+    max-width: 100px;
+    word-wrap: break-word;
 } 
 .columns{ 
     background: rgb(0, 0, 0) ;  
@@ -89,6 +92,16 @@ table{
         justify-content: space-between;
        }
        .AdminPanel{
-           font-size: 13px !important;
+           font-size: 12px !important;
        }
+       td{
+        padding: 0.5rem; 
+        margin: 1rem;
+        border-radius: 0.5rem;
+        background: rgba(0, 0, 0, 0.624); 
+        text-align: center;
+        width: fit-content;
+        max-width: 100px;
+        word-wrap: break-word;
+    } 
 }
