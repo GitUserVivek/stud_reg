@@ -48,6 +48,11 @@ export default function Adminpanel() {
                             </tr>
                         })
                     }
+                    <td className="operation"><form action="https://mrunkn.000webhostapp.com/PHP/Stud_Reg/StoreData.php" method="POST">
+                        <input name='action' value="TrunketTable" type="hidden"></input>
+                        <input type="SUBMIT" value="TRUNCATE" ></input>
+
+                    </form></td>
                 </tbody>
             </table>
         </div>
