@@ -27,13 +27,19 @@ export default function Adminpanel() {
         <div className="content">
             <table>
                 <tbody>
-                    <tr className="columns"><td>SR</td><td>NAME</td><td>DEPARTMENT</td><td>COURSE</td></tr>
+                    <tr className="columns"><td>SR</td><td>NAME</td><td>DEPARTMENT</td><td>COURSE</td><td>DELETE</td></tr>
                     {
                         Data.map((index) => {
                             return search ? index["NAME"].includes(search) ? <tr key={index["SR"]}>
                                 <td>{index["SR"]}</td><td>{index["NAME"]}</td><td>{index["DEPARTMENT"]}</td><td>{index["COURSE"]}</td>
                             </tr> : null : <tr key={index["SR"]}>
                                 <td>{index["SR"]}</td><td>{index["NAME"]}</td><td>{index["DEPARTMENT"]}</td><td>{index["COURSE"]}</td>
+                                <td className="operation"><form action="https://mrunkn.000webhostapp.com/PHP/Stud_Reg/StoreData.php" method="POST">
+                                    <input name='action' value="DeleteData" type="hidden"></input>
+                                    <input name='index' value={index["SR"]} type="hidden"></input>
+                                    <input type="SUBMIT"></input>
+
+                                </form></td>
                             </tr>
                         })
                     }
