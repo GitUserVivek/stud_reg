@@ -1,0 +1,44 @@
+.AdminPanel{
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    height: 100%;
+}  
+.AdminPanel .heading{
+ background: rgba(0, 0, 0, 0.589);
+ border-radius: 0.5rem;
+ width: 50vw;
+ padding: 1rem;
+ text-align: start;
+ margin: 0rem 1rem;
+}
+.content{ 
+    display: flex;
+    flex-direction: column;  
+    overflow: scroll; 
+    margin-top: 5rem;
+} 
+td{
+    padding: 0.5rem; 
+    margin: 1rem;
+    border-radius: 0.5rem;
+    background: rgba(0, 0, 0, 0.624); 
+    text-align: center;
+} 
+.columns{
+    background: rgb(255, 255, 255) ;  
+}
+table{
+    width: 50vw;
+    position: relative; 
+    z-index: 0;
+    overflow: hidden;
+}
+.Top{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 75vw;
+    position: fixed;
+    z-index: 1;
+}
