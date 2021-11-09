@@ -51,7 +51,7 @@ export default function AdminAuth({ setAccess }) {
                     Submit
                 </button>
             </NavLink>
-            <NavLink exact to="/User" className="AdminButtom">User Form </NavLink>
+            <NavLink exact to="/" className="AdminButtom">User Form </NavLink>
         </form>
     </div >
 }

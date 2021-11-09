@@ -8,7 +8,7 @@ export default function Body() {
     const [access, setAccess] = useState(false);
     return <div className="Body">
         <Router>
-            <Route exact path="/User" > <Users /> </Route>
+            <Route exact path="/" > <Users /> </Route>
             <Route exact path="/AdminAuth" > <AdminAuth setAccess={setAccess} /> </Route>
             <Route exact path="/Adminpanel" > {access ? <Adminpanel /> : <NavLink exact to="/AdminAuth" className="AdminButtom">Try Again </NavLink>}</Route>
         </Router >
