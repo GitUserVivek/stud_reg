@@ -42,7 +42,7 @@ export default function Adminpanel() {
                                 <td className="operation"><form action="https://mrunkn.000webhostapp.com/PHP/Stud_Reg/StoreData.php" method="POST">
                                     <input name='action' defaultValue="DeleteData" type="hidden"></input>
                                     <input name='index' defaultValue={index["SR"]} type="hidden"></input>
-                                    <input type="SUBMIT"></input>
+                                    <input type="SUBMIT" defaultValue="DELETE"></input>
 
                                 </form></td>
                             </tr>
