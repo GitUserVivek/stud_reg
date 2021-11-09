@@ -59,6 +59,9 @@ table{
     color: #fff !important ;
 }
 @media  screen and (max-width:450px) { 
+    .AdminButtom{
+        color: white;
+    }
     .AdminPanel .heading{
         background: rgba(0, 0, 0, 0.589);
         border-radius: 0.5rem;
