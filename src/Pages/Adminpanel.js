@@ -18,11 +18,12 @@ export default function Adminpanel() {
     }, []);
     return <div className="AdminPanel">
 
-        <div className="Top">  <div className="heading">admin panel   <NavLink exact to="/AdminAuth" className="AdminButtom">LogOut </NavLink>  </div><div className="search">search <input type="text" onChange={
-            (target) => {
-                setSearch(target.target.value)
-            }
-        }></input> </div> </div>
+        <div className="Top">  <div className="heading">admin panel   <NavLink exact to="/AdminAuth" className="AdminButtom">LogOut </NavLink>  </div>
+            <div className="search"> <input type="text" placeholder="search" onChange={
+                (target) => {
+                    setSearch(target.target.value)
+                }
+            }></input> </div> </div>
         <div className="content">
             <table>
                 <tbody>
