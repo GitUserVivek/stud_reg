@@ -12,11 +12,15 @@ function CheckAuth(username, password, Data, setAccess) {
         return false;
     }
 }
-function Check(username, password) {
+function Check(username, password, Data) {
     if (username === "" || password === "") {
         alert("please enter username and password");
-        return false
     }
+    if (username !== Data[0].USERNAME || password !== Data[0].PASSWORD) {
+        alert("please enter correct username and password");
+        return true;
+    }
+
 }
 export default function AdminAuth({ setAccess }) {
     const [username, setUsername] = useState("");
@@ -53,7 +57,7 @@ export default function AdminAuth({ setAccess }) {
             <NavLink exact to={auth ? "/Adminpanel" : "/AdminAuth"} className="AdminButtom">
                 <button type="button" onFocus={
                     () => setAuth(CheckAuth(username, password, Data, setAccess))
-                } onClick={() => Check(username, password)}
+                } onClick={() => Check(username, password, Data)}
                 >
                     Submit
                 </button>
