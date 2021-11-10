@@ -28,8 +28,9 @@ export default function Adminpanel() {
             <table>
                 <tbody>
                     <tr className="columns"><td>SR</td><td>NAME</td><td>DEPARTMENT</td><td>COURSE</td><td>DELETE</td></tr>
+
                     {
-                        Data.map((index) => {
+                        Data[0] !== " " ? Data.map((index) => {
                             return search ? index["NAME"].includes(search) ? <tr key={index["SR"]}>
                                 <td>{index["SR"]}</td><td>{index["NAME"]}</td><td>{index["DEPARTMENT"]}</td><td>{index["COURSE"]}</td> <td className="operation"><form action="https://mrunkn.000webhostapp.com/PHP/Stud_Reg/StoreData.php" method="POST">
                                     <input name='action' defaultValue="DeleteData" type="hidden"></input>
@@ -46,7 +47,7 @@ export default function Adminpanel() {
 
                                 </form></td>
                             </tr>
-                        })
+                        }) : <tr><td></td><td></td><td>"no data found"</td><td></td><td></td></tr>
                     }
                     <tr><td className="operation"><form action="https://mrunkn.000webhostapp.com/PHP/Stud_Reg/StoreData.php" method="POST">
                         <input name='action' defaultValue="TrunketTable" type="hidden"></input>
