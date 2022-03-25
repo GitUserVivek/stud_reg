@@ -1,5 +1,0 @@
-create the registration form for the college 
-with search filter
-
-//  Username : id13918522_mrvivek_db  
-//  Password : Mr.Vivek@7840
